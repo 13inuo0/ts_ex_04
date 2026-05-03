@@ -15,3 +15,18 @@ let fun = function () {};
 function add(n1: number, n2: number) {
   return "A";
 }
+
+// 리터럴 타입
+let gender = "male"; //male or female
+// string 지정이 되어 어떤 문자든 입력할 수 있다.
+gender = "A";
+
+// male or female 을 값으로 지정하고 싶다면
+let gender1: "male" | "female" = "male";
+// gender1 = "A"; //error
+gender1 = "female";
+
+let user: { name: "철수" };
+user = {
+  name: "철수",
+};
