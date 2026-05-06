@@ -33,3 +33,11 @@ function findLongestString(strings: string[]) {
 const words = ["apple", "banana", "cherry", "watermelon"];
 const longestWord = findLongestString(words);
 console.log(longestWord); // "watermelon" 반환.
+
+//  함수 표현식의 시그니처
+const add2: (n1: number, n2: number) => number = function add(n1, n2) {
+  return n1 + n2;
+};
+
+// const greet2: (name: string) => string = (name) => `Hello, ${name}`;
+const greet2 = (name: string): string => `Hello, ${name}`;
