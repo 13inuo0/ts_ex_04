@@ -26,3 +26,18 @@ const res2 = add4(10, 20); //덧셈 연산
 
 console.log(res1);
 console.log(res2);
+
+function formatValue(value: number): number;
+function formatValue(value: string): string;
+function formatValue(value: string | number): string | number {
+  if (typeof value === "string") {
+    return value.trim().toUpperCase();
+  } else {
+    return value;
+  }
+}
+const result1 = formatValue("hello");
+const result2 = formatValue(10);
+
+console.log(result1)
+console.log(result2)
