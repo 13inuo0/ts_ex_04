@@ -10,10 +10,18 @@ const operations = {
 };
 
 // 콜백 함수 시그니처
+// function fetchData(callback: (data: string) => void) {
+//   callback("some data");
+// }
+// fetchData((data: string): void => {
+//   console.log(data);
+// });
+
+// 함수 호출하는 쪽에 타입을 지정하지 않아도 에러발생X 
 function fetchData(callback: (data: string) => void) {
   callback("some data");
 }
-fetchData((data: string): void => {
+fetchData((data) => {
   console.log(data);
 });
 
