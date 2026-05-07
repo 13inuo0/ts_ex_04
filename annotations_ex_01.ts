@@ -12,7 +12,7 @@ let obj = { name: "kim" };
 let fun = function () {};
 
 // 매개변수와 상관없이 string 타입으로 추론된다.
-function add(n1: number, n2: number) {
+function add3(n1: number, n2: number) {
   return "A";
 }
 
